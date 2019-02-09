@@ -11,6 +11,9 @@ function mostrar()
 
 	/*
 		linea 42 y 44
+		otro metodo tambien seria hacer lo mismo pero con 
+		variable = document.getElementById('ID').value;
+		.... etc..
 	*/
 
 
