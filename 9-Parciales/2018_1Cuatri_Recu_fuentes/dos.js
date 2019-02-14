@@ -7,12 +7,13 @@ function mostrar()
 
 	var pago;
 	var descuento;
-	var total;
-
+	var iva;
 
 	pago = prompt("Ingrese el valor de su compra.");
 
 	descuento = pago - (pago*10/100);
+
+	iva = descuento * 21 / 100;
 
 	
 
