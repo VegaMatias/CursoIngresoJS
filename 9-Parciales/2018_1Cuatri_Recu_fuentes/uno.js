@@ -11,6 +11,9 @@ function mostrar()
 	  mascotaUno = prompt("Ingresa cuanto pesa la primera mascota: ");
 	  mascotaDos = prompt("Ingresa cuanto pesa la segunda mascota: ");
 
+	  mascotaUno = parseInt(mascotaUno);
+	  mascotaDos = parseInt(mascotaDos);
+
 	  suma = mascotaUno + mascotaDos;
 
 	  alert("Las dos mascotas en total suman: " + suma);
