@@ -5,17 +5,10 @@ function mostrar()
 
 	//despues de 15 minutos solo se mostrará el enunciado del ejercicio 3
 
-	var nombre;
-	var localidad;
 	var pago;
 	var descuento;
 	var masIva;
 
-	nombre = elNombre.value;
-	localidad = laLocalidad.value;
-
-	alert(nombre + localidad);
-/*
 	pago = prompt("Ingresa pago: ");
 	pago = parseInt(pago);
 
@@ -27,6 +20,6 @@ function mostrar()
 	masIva = masIva + descuento;
 
 	alert("Tu compra es de $" + pago + " tenes un descuento del 10% queda en $" + descuento + ", mas el iva es $" + masIva);
-*/
+
 
 }
