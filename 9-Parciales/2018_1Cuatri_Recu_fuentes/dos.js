@@ -14,6 +14,8 @@ function mostrar()
 	nombre = elNombre.value;
 	localidad = laLocalidad.value;
 
+	alert(nombre + localidad);
+/*
 	pago = prompt("Ingresa pago: ");
 	pago = parseInt(pago);
 
@@ -25,6 +27,6 @@ function mostrar()
 	masIva = masIva + descuento;
 
 	alert("Tu compra es de $" + pago + " tenes un descuento del 10% queda en $" + descuento + ", mas el iva es $" + masIva);
-
+*/
 
 }
