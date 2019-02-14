@@ -7,15 +7,19 @@ function mostrar()
 
 	var pago;
 	var descuento;
-	var iva;
+	var masIva;
 
-	pago = prompt("Ingrese el valor de su compra.");
+	pago = elNombre.value;
+
+	pago = parseInt(pago);
 
 	descuento = pago - (pago*10/100);
 
-	iva = descuento * 21 / 100;
+	masIva = descuento * 21 / 100;
 
-	
+	masIva = masIva + descuento;
+
+	alert("Tu compra es de $" + pago + " tenes un descuento del 10% queda en $" + descuento + ", mas el iva es $" + masIva);
 
 
 }
