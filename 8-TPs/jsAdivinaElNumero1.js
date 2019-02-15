@@ -28,6 +28,7 @@ function comenzar()
 function verificar()
 {
 	var numeroIngresado;
+	var mensaje;
 
 	contadorIntentos = contadorIntentos + 1;
 
@@ -40,20 +41,22 @@ function verificar()
 
 	if(numeroIngresado == numeroSecreto)
 	{
-		alert("Sos un genio");
+		mensaje = "Sos un genio y lo hiciste en " + contadorIntentos + " intentos";
 	}
 	else
 	{
 		if(numeroIngresado < numeroSecreto)
 		{
-			alert("Falta");
+			mensaje = "Falta";
 		}
 		else
 		{
-			alert("Te pasaste");
+			mensaje = "Te pasaste";
 		}
 
-
 	}
+
+
+	alert(mensaje);
 
 }
