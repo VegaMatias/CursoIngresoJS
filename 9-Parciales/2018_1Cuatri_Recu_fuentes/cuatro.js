@@ -8,11 +8,26 @@ function mostrar()
 	*/
 
 
-	var restaurante;
 	var amigos;
-	var cuenta;
+	var cuentaTotal;
+	var masPropina;
+	var aPagarCadaAmigo
 
-	
+	amigos = prompt("Ingrese la cantidad de amigos: ");
+	amigos = parseInt(amigos);
+
+	cuentaTotal = prompt("Ingrese la cantidad a pagar en total: ");
+	cuentaTotal = parseInt(cuentaTotal);
+
+	masPropina = (cuentaTotal * 10 / 100) + cuentaTotal;
+
+	aPagarCadaAmigo = masPropina / amigos;
+
+	alert("En un grupo de " + amigos + " amigos, siendo un total de " + cuentaTotal + " mas la propina del 10% quedaria " + masPropina);
+
+
+
+
 
 
 
