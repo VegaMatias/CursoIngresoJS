@@ -42,6 +42,14 @@ function verificar()
 	if(numeroIngresado == numeroSecreto)
 	{
 		mensaje = "Sos un genio y lo hiciste en " + contadorIntentos + " intentos";
+
+		switch(contadorIntentos)
+		{
+			case 1:
+				mensaje = "ad";
+			break; 
+
+		}
 	}
 	else
 	{
@@ -55,6 +63,8 @@ function verificar()
 		}
 
 	}
+
+
 
 
 	alert(mensaje);
