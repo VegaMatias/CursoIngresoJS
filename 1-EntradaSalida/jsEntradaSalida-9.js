@@ -17,9 +17,6 @@ function mostrarAumento()
 /*
 	esta operacion de arriba es el incremento del 10% del numero que se introduzca
 */
-
-
-
 	resultado.value = aumento;	
 
 }
