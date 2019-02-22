@@ -4,7 +4,7 @@ function mostrar()
 var sexo;
 sexo = prompt("ingrese f ó m .");
 
-while(sexo != "f" || sexo == "m")
+while(sexo != "f" && sexo != "m")
 {
 sexo = prompt("ERROR, ingrese f ó m .");
 }
