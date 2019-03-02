@@ -44,14 +44,14 @@ function mostrar()
 			{
 				cantidadPaisesIgualACien ++;
 			}
+			else
+			{
+				
+			}
 		}
 
-		//4) Con un maximo y menor que recorra)? 
+		//4) Con un maximo y menor que recorra)? 4-El nombre del primer país que superó los 100 de superficie 
 
-		if(ingresePais > nombrePaisSuperoCienSuperficie)
-		{
-			
-		}
 
 
 
