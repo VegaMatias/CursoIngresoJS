@@ -117,6 +117,8 @@ f)El precio máximo y el mínimo de todas las gaseosa de menores de 3 litros.
 		while(velocidadKilometros < 0 || velocidadKilometros > 250)
 		{
 			velocidadKilometros = prompt("ERROR, Ingrese la velocidad en kilometros de su vehiculo (entre 0 y 250):");
+			velocidadKilometros = parseInt(velocidadKilometros);
+
 		}
 
 
@@ -134,24 +136,26 @@ f)El precio máximo y el mínimo de todas las gaseosa de menores de 3 litros.
 
 		//1)
 		promedioVehiculos = promedioVehiculos + velocidadKilometros;
-
+		//tambien se puede escribir en promedioVehiculos += velocidadKilometros; o el *= | -=  |/=
 
 
 		//2)
 
 		if(vehiculos == 1)
 		{
-			velocidadMasAlta  = velocidadKilometros;
+			//velocidadMasAlta  = velocidadKilometros;
 			velocidadMasBaja = velocidadKilometros;
 			acumuladorTipoConbustible = tipoConbustible;
-			velocidadMasAltaDelSolido = velocidadKilometros;
+			//velocidadMasAltaDelSolido = velocidadKilometros;
 		}
 		else
 		{
+			/*
 			if(velocidadKilometros > velocidadMasAlta)
 			{
 				velocidadMasAlta = velocidadKilometros;
 			}
+			*/
 			else
 			{
 				if(velocidadKilometros < velocidadMasBaja)
@@ -173,7 +177,7 @@ f)El precio máximo y el mínimo de todas las gaseosa de menores de 3 litros.
 
 		if(tipoConbustible == "s" && velocidadMasAltaDelSolido < velocidadKilometros )
 		{	
-			velocidadMasAltaDelSolido = velocidadMasAlta;	
+			velocidadMasAltaDelSolido = velocidadKilometros;	
 		}
 
 
