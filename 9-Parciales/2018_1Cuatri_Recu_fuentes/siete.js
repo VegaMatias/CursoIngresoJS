@@ -30,6 +30,16 @@ el ingreso por document.write:
 5-El promedio de kilómetros ingresados.
 6-El nombre del que menos territorio tiene.
 
+japon 10
+italia 20
+bolivia 2
+argentina 100
+rusia 200
+eeuu 300
+chine 9
+peru 301
+
+
 
 
 Realizar el algoritmo que permita ingresar la marca de la marca de la gaseosa,la
