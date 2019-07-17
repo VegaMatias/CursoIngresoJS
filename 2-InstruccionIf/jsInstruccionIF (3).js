@@ -1,19 +1,20 @@
 function mostrar()
 {
 //tomo la edad  
-	var edadd;
+    var edad;
+    var mensaje;
 
-	edadd = edad.value;
+    edad = document.getElementById("edad").value;
 
+    if(edad > 17)
+    {
+        mensaje = "Es mayor de edad";
+    }
+    else
+    {
+        mensaje = "Es menor de edad";
+    }
 
-	if(edadd >= 18)
-	{
-		alert("Usted es mayor de edad.")
-	}
-
-	if(edadd < 18)
-	{
-		alert("Usted es menor de edad.")
-	}
+    alert(mensaje);
 
 }//FIN DE LA FUNCIÓN
