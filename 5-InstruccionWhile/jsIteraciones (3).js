@@ -1,30 +1,20 @@
 function mostrar()
 {
+
+var clave;
+
 /*
-mientras no sea!!
-no es si no se ue..
-es MIENTRAS LA CLAVE SEA DISTINTA A "UTN750"
-	while(clave!= "utn750")
-
-	hasta aca es bucle infinito... 
-
-	hasta que (el punto 3 )
-	que es pedir la clave de vuelta...
-
-	clave = pro..("error, ingrese el numero clave")
-
-bloquea.. el while.. mientras nos e cumpla.. no para
+while(clave != "utn750")
+{
+    clave = prompt("ingrese su clave.");
+}
 */
-	var clave 
-	clave = prompt("ingrese el número clave.");
 
-	while(clave != "UTN750")
-	{
+while(!(clave == "utn750"))
+{
+    clave = prompt("ingrese su clave.");
+}
 
-
-		clave = prompt("ERROR, ingrese el numero clave.");
-	}
-
-	alert("Bienvenido!");
+alert("Correcto. Su clave es: " + clave);
 
 }//FIN DE LA FUNCIÓN

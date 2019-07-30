@@ -1,23 +1,24 @@
 function mostrar()
 {
 
-	var contador=0;
-	var acumulador=0;
-	var respuesta="si";
-/*
-	dos formas de controloar el while..
-	con contador o preguntandol..como esta abajo 
-*/
+	var contador = 0;
+	var acumulador = 0;
+	var respuesta = 'si';
+	var numero;
+	var promedio;
+
 	while(respuesta == "si")
 	{
-		contador = contador + 1;
-		numero = prompt("Ingrese el numero " + contador + "# :" );
-		numero = parseInt(numero);
-		acumulador = acumulador + numero;
-		respuesta = prompt(" => Si para continuar");
-	}
+		numero = parseInt(prompt("Ingrese un numero: "));
 
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=acumulador/contador;
+		acumulador = acumulador + numero;
+
+		respuesta = prompt("Si desea ingresar otro numero ponga 'si' sin comillas");
+		contador = contador + 1;
+	}
+	promedio = acumulador / contador;
+
+document.getElementById('suma').value = acumulador;
+document.getElementById('promedio').value = promedio;
 
 }//FIN DE LA FUNCIÓN
