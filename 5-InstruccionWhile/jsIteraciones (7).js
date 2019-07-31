@@ -3,22 +3,33 @@ function mostrar()
 
 	var contador = 0;
 	var acumulador = 0;
-	var respuesta = 'si';
 	var numero;
-	var promedio;
+	var respuesta;
 
-	while(respuesta == "si")
+
+
+
+	for(respuesta = "si"; respuesta == "si"; contador++)
 	{
 		numero = parseInt(prompt("Ingrese un numero: "));
-
 		acumulador = acumulador + numero;
 
-		respuesta = prompt("Si desea ingresar otro numero ponga 'si' sin comillas");
-		contador = contador + 1;
-	}
-	promedio = acumulador / contador;
 
-document.getElementById('suma').value = acumulador;
-document.getElementById('promedio').value = promedio;
+		/* esto iria adentro de while, por si el usuario NO ingresa un numero, esto lo hara hasta que ingrese un numero
+			do
+			{
+				numero = prompt();
+				numero = parseInt(numero);
+
+
+			} while(isNaN(numero));
+		*/
+
+		respuesta = prompt("Si desea ingresar otro numero escriba si, de lo contrario cualquier otra cosa.");
+	}
+
+
+document.getElementById('suma').value=acumulador;
+document.getElementById('promedio').value=acumulador/contador;
 
 }//FIN DE LA FUNCIÓN

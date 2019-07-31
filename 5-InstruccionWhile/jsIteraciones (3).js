@@ -1,20 +1,15 @@
 function mostrar()
 {
-
 var clave;
 
-/*
-while(clave != "utn750")
+for(clave = "adsf"; clave != "utn750"; )
 {
-    clave = prompt("ingrese su clave.");
-}
-*/
+clave = prompt("Ingrese su clave: ");   
 
-while(!(clave == "utn750"))
-{
-    clave = prompt("ingrese su clave.");
 }
 
-alert("Correcto. Su clave es: " + clave);
+alert("Clave correcta.");
+
+
 
 }//FIN DE LA FUNCIÓN

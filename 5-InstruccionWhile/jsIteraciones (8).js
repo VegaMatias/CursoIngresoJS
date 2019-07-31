@@ -13,17 +13,12 @@ function mostrar()
 
 		if(numero >= 0)
 		{
-			
-
-
+			positivo = positivo + numero;
 		}
 		else
 		{
-
+			negativo = negativo * numero;
 		}
-
-
-
 
 		respuesta = prompt("Si desea ingresar otro numero escriba 'si', sin comillas");
 		contador = contador + 1;  
