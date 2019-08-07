@@ -57,7 +57,7 @@ Al presionar el botón pedir números hasta que el usuario quiera, mostrar:
 		//cantidad numeros pares(?)
 
 
-		if(numero % 2)
+		if(numero % 2 = 0)
 		{
 			cantidadNumerosPares = cantidadNumerosPares + 1;  	 
 		}
